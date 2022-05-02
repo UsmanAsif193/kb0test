@@ -1,0 +1,9 @@
+overwrite: true
+schema: "http://88.208.199.175:4000/graphql?query=%7B%0A++knowledgebases_+%7B%0A++++name%0A++%7D%0A%7D"
+documents: null
+generates:
+  generator/apolloComponents.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
